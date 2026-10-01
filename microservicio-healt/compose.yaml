@@ -1,0 +1,9 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: microservicio-health:1.0
+    container_name: microservicio-health-compose
+    ports:
+      - "5000:5000"
